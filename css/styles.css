@@ -3,6 +3,7 @@
  * #ffffff white
  * #292929 dark gray
  * #5b656c light gray
+ * #cccccc even lighter gray
  * #eaeaea almost white
  * #500505 light maroon
  */
@@ -19,11 +20,11 @@ body {
 }
 
 a:link {
-    color: #eaeaea;
+    color: #500505;
 }
 
 a:visited {
-    color: #5b656c;
+    color: #292929;
 }
 
 .content-wrap {
@@ -95,15 +96,19 @@ header .logo img {
 
 /* Posts
 ------------------------------- */
-main article {
+.post-box {
     background: #eaeaea;
     padding: 10px 10px;
     margin: 0 auto;
     clear: both;
 }
 
-main article h2 {
+.post-box h2, .post-box h3 {
     color: #500505;
+}
+
+.post-meta {
+    background: #cccccc;
 }
 
 /* Footer
@@ -127,6 +132,14 @@ footer .contact-list ul {
 footer .contact-list img {
     height: 32px;
     padding: 0 10px;
+}
+
+footer .contact-list a:link {
+    color: #eaeaea;
+}
+
+footer .contact-list a:visited {
+    color: #5b656c;
 }
 
 /* Responsive

@@ -88,6 +88,22 @@ header .logo img {
     background: #500505;
 }
 
+.header-text {
+    background: #eaeaea;
+    padding: 10px 10px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.header-text h1 {
+    color: #500505;
+    text-align: center;
+}
+
+.header-text hr {
+    color: #500505;
+}
+
 .main-bg {
     padding: 0;
     margin: 0;

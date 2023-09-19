@@ -112,6 +112,7 @@ header .logo img {
     padding: 0;
     margin: 0;
     width: 100%;
+    display: block;
 }
 
 .main-bg-container .content-wrap {
@@ -119,6 +120,7 @@ header .logo img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: block;
 
   z-index: 100;
   width: 100%;
@@ -129,6 +131,8 @@ header .logo img {
   background: rgba(0, 0, 0, 0.75); /* Black background with 0.5 opacity */
 
   border-radius: 10px;
+
+  overflow: hidden;
 }
 
 .main-bg-container .content-wrap h1 {
@@ -198,7 +202,7 @@ footer .contact-list a:visited {
 ------------------------------ */
 @media screen and (max-width: 1100px){
     .main-bg-container .content-wrap {
-        max-width: 90%;
+        max-width: 80%;
     }
     .main-bg-container .content-wrap h1{
         font-size: 20pt;
@@ -226,17 +230,17 @@ footer .contact-list a:visited {
 
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .main-bg-container .content-wrap {
-        height: 100%;
-        width: 100%;
-        padding: 10px auto;
+        all: revert;
+        background: rgb(0, 0, 0);
+        padding: 10px 10px;
+        margin: 0 auto;
+        clear: both;
     }
-    .main-bg-container .content-wrap h1{
-        font-size: 14pt;
-    }
-    .main-bg-container .content-wrap p{
-        font-size: 10pt;
+    
+    .main-bg-container .content-wrap h1 {
+        font-size: 18pt;
     }
 }
 

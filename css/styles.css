@@ -104,10 +104,46 @@ header .logo img {
     color: #500505;
 }
 
+.main-bg-container {
+    position: relative;
+}
+
 .main-bg {
     padding: 0;
     margin: 0;
     width: 100%;
+}
+
+.main-bg-container .content-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 100;
+  width: 100%;
+
+  padding: 10px 50px;
+
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.75); /* Black background with 0.5 opacity */
+
+  border-radius: 10px;
+}
+
+.main-bg-container .content-wrap h1 {
+  font-size: 30pt;
+  color: #eaeaea; 
+  text-decoration: underline;
+}
+
+.main-bg-container .content-wrap p {
+  font-size: 20pt;
+  color: #cccccc; 
+}
+
+.main-bg-container .content-wrap a:visited {
+  color: #5b656c; 
 }
 
 /* Posts
@@ -160,6 +196,18 @@ footer .contact-list a:visited {
 
 /* Responsive
 ------------------------------ */
+@media screen and (max-width: 1100px){
+    .main-bg-container .content-wrap {
+        max-width: 90%;
+    }
+    .main-bg-container .content-wrap h1{
+        font-size: 20pt;
+    }
+    .main-bg-container .content-wrap p{
+        font-size: 12pt;
+    }
+}
+
 @media screen and (max-width: 800px){
     header .logo {
         float: none;
@@ -175,4 +223,20 @@ footer .contact-list a:visited {
         align-items: stretch;
         justify-content: start;
     }
+
 }
+
+@media screen and (max-width: 450px){
+    .main-bg-container .content-wrap {
+        height: 100%;
+        width: 100%;
+        padding: 10px auto;
+    }
+    .main-bg-container .content-wrap h1{
+        font-size: 14pt;
+    }
+    .main-bg-container .content-wrap p{
+        font-size: 10pt;
+    }
+}
+

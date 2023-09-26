@@ -194,6 +194,7 @@ header .logo img {
     padding: 1em 2em;
     font-size: 20pt;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .post-box .important-links a:hover {

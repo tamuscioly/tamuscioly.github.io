@@ -142,12 +142,16 @@ header .logo img {
 }
 
 .main-bg-container .content-wrap p {
-  font-size: 20pt;
-  color: #cccccc; 
+    font-size: 20pt;
+    color: #cccccc; 
 }
 
 .main-bg-container .content-wrap a:link {
-  color: #a02020; 
+    color: #a02020; 
+}
+
+.main-bg-container .content-wrap a:visited {
+    color: #999999;
 }
 
 /* Posts

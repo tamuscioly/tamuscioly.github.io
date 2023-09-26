@@ -146,6 +146,10 @@ header .logo img {
   color: #cccccc; 
 }
 
+.main-bg-container .content-wrap a:link {
+  color: #a02020; 
+}
+
 .main-bg-container .content-wrap a:visited {
   color: #5b656c; 
 }

@@ -73,7 +73,7 @@ header .logo img {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    align-items: end;
+    align-items: center;
 }
 
 #navbar a {
@@ -82,6 +82,9 @@ header .logo img {
     text-align: center;
     padding: 1em 2em;
     text-decoration: none;
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 #navbar a:hover {
@@ -310,4 +313,53 @@ footer .contact-list a:visited {
     .main-bg-container .content-wrap h1 {
         font-size: 18pt;
     }
+}
+
+/* Tournaments
+------------------------------ */
+.resource-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #eaeaea;
+}
+
+.resource-column {
+    width: 50%;
+    max-width: 500px;
+    box-sizing: border-box;
+    padding: 20px 50px 20px;
+    text-align: center;
+    background: transparent;
+}
+
+.past-results,
+.past-tests {
+    background: transparent;
+    border: none;
+}
+
+.resource-column h1 {
+    color: #500505;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.resource-button {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 14px 28px;
+    box-sizing: border-box;
+
+    background: #500505;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 999px;
+}
+
+.resource-button:hover {
+    background: #292929;
 }

@@ -32,11 +32,84 @@ a:visited {
     margin: 0 auto;
 }
 
-/* hide text that goes out of flow but keep accessiblity */
+/* Screen-reader utility
+------------------------------- */
 .screen-reader-text {
     position: absolute;
     top: -9999px;
     left: -9999px;
+}
+
+/* Layout / general sections
+------------------------------- */
+.header-text {
+    background: #eaeaea;
+    padding: 10px 10px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.header-text h1 {
+    color: #500505;
+    text-align: center;
+}
+
+.header-text hr {
+    color: #500505;
+}
+
+.post-box {
+    background: #eaeaea;
+    padding: 10px 10px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.post-box h2,
+.post-box h3 {
+    color: #500505;
+}
+
+.post-meta {
+    background: #cccccc;
+}
+
+.post-box .important-links {
+    height: 120px;
+    background: #cccccc;
+}
+
+.post-box .important-links ul {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.post-box .important-links a {
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 1em 2em;
+    font-size: 20pt;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-box .important-links a:hover {
+    color: #eaeaea;
+    background: #500505;
+}
+
+/* Hidden alt-text utility
+------------------------------- */
+.embedded-pdf-alt,
+.embedded-spreadsheet-alt {
+    display: none;
 }
 
 /* Header
@@ -91,22 +164,8 @@ header .logo img {
     background: #500505;
 }
 
-.header-text {
-    background: #eaeaea;
-    padding: 10px 10px;
-    margin: 0 auto;
-    clear: both;
-}
-
-.header-text h1 {
-    color: #500505;
-    text-align: center;
-}
-
-.header-text hr {
-    color: #500505;
-}
-
+/* Hero banner
+------------------------------- */
 .main-bg-container {
     position: relative;
 }
@@ -119,99 +178,42 @@ header .logo img {
 }
 
 .main-bg-container .content-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
 
-  z-index: 100;
-  width: 100%;
+    z-index: 100;
+    width: 100%;
 
-  padding: 10px 50px;
+    padding: 10px 50px;
 
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.75); /* Black background with 0.5 opacity */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.75); /* Black background with 0.5 opacity */
 
-  border-radius: 10px;
+    border-radius: 10px;
 
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .main-bg-container .content-wrap h1 {
-  font-size: 30pt;
-  color: #eaeaea; 
-  text-decoration: underline;
+    font-size: 30pt;
+    color: #eaeaea;
+    text-decoration: underline;
 }
 
 .main-bg-container .content-wrap p {
     font-size: 20pt;
-    color: #cccccc; 
+    color: #cccccc;
 }
 
 .main-bg-container .content-wrap a:link {
-    color: #a02020; 
+    color: #a02020;
 }
 
 .main-bg-container .content-wrap a:visited {
     color: #999999;
-}
-
-/* Posts
-------------------------------- */
-.post-box {
-    background: #eaeaea;
-    padding: 10px 10px;
-    margin: 0 auto;
-    clear: both;
-}
-
-.post-box h2, .post-box h3 {
-    color: #500505;
-}
-
-.post-meta {
-    background: #cccccc;
-}
-
-.post-box .important-links {
-    height: 120px;
-    background: #cccccc;
-}
-
-.post-box .important-links ul {
-    height: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.post-box .important-links a {
-    color: #000000;
-    display: block;
-    text-align: center;
-    padding: 1em 2em;
-    font-size: 20pt;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.post-box .important-links a:hover {
-    color: #eaeaea;
-    background: #500505;
-}
-
-/* hide alt text */
-.embedded-pdf-alt {
-    display: none;
-}
-
-.embedded-spreadsheet-alt {
-    display: none;
 }
 
 /* Footer
@@ -245,77 +247,7 @@ footer .contact-list a:visited {
     color: #5b656c;
 }
 
-/* Responsive
------------------------------- */
-@media screen and (max-width: 1100px){
-    .main-bg-container .content-wrap {
-        max-width: 80%;
-    }
-    .main-bg-container .content-wrap h1{
-        font-size: 20pt;
-    }
-    .main-bg-container .content-wrap p{
-        font-size: 12pt;
-    }
-}
-
-@media screen and (max-width: 800px){
-    header .logo {
-        float: none;
-        width: 100%;
-    }
-    #navbar {
-        float: none;
-        height: fit-content;
-        width: 100%;
-    }
-    #navbar ul {
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: start;
-    }
-
-    .post-box .important-links {
-        float: none;
-        height: fit-content;
-        width: 100%;
-    }
-
-    .post-box .important-links ul {
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: start;
-    }
-
-    .embedded-pdf {
-        display: none;
-    }
-    .embedded-pdf-alt {
-        display: inline;
-    }
-    .embedded-spreadsheet {
-        display: none;
-    }
-    .embedded-spreadsheet-alt {
-        display: inline;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .main-bg-container .content-wrap {
-        all: revert;
-        background: rgb(0, 0, 0);
-        padding: 10px 10px;
-        margin: 0 auto;
-        clear: both;
-    }
-    
-    .main-bg-container .content-wrap h1 {
-        font-size: 18pt;
-    }
-}
-
-/* About
+/* About page
 ------------------------------ */
 .image-row {
     display: flex;
@@ -330,7 +262,7 @@ footer .contact-list a:visited {
     height: auto;
 }
 
-/* Tournaments
+/* Tournaments page
 ------------------------------ */
 .resource-page {
     display: flex;
@@ -377,4 +309,81 @@ footer .contact-list a:visited {
 
 .resource-button:hover {
     background: #292929;
+}
+
+/* Responsive
+------------------------------ */
+@media screen and (max-width: 1100px) {
+    .main-bg-container .content-wrap {
+        max-width: 80%;
+    }
+
+    .main-bg-container .content-wrap h1 {
+        font-size: 20pt;
+    }
+
+    .main-bg-container .content-wrap p {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .logo {
+        float: none;
+        width: 100%;
+    }
+
+    #navbar {
+        float: none;
+        height: fit-content;
+        width: 100%;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: start;
+    }
+
+    .post-box .important-links {
+        float: none;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .post-box .important-links ul {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: start;
+    }
+
+    .embedded-pdf {
+        display: none;
+    }
+
+    .embedded-pdf-alt {
+        display: inline;
+    }
+
+    .embedded-spreadsheet {
+        display: none;
+    }
+
+    .embedded-spreadsheet-alt {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-bg-container .content-wrap {
+        all: revert;
+        background: rgb(0, 0, 0);
+        padding: 10px 10px;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    .main-bg-container .content-wrap h1 {
+        font-size: 18pt;
+    }
 }
